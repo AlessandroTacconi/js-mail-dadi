@@ -9,22 +9,17 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 let giocatore = Math.floor(Math.random() * 6) + 1;
 let computer = Math.floor(Math.random() * 6) + 1;
-let testoRisultato;
 
 console.log('Il punteggio del giocatore è: ' + giocatore);
 console.log('Il punteggio del computer è: ' + computer);
 
 if (giocatore > computer) {
   console.log('Hai vinto :)');
-  testoRisultato = 'Hai vinto :)';
 } else if (giocatore < computer) {
   console.log('Hai perso :(');
-  testoRisultato = 'Hai perso :(';
 } else if (giocatore === computer) {
   console.log('Hai pareggiato, prova ancora!');
-  testoRisultato = 'Hai pareggiato, prova ancora!';
 }
 
 document.querySelector('.risultato-giocatore').innerHTML = giocatore;
 document.querySelector('.risultato-computer').innerHTML = computer;
-document.querySelector('esito').innerHTML = testoRisultato;
